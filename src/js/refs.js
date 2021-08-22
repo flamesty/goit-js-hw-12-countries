@@ -1,7 +1,6 @@
-export const refs = {
-countryContainer: document.querySelector('.country__container'),
-input: document.querySelector('#input'),
-inputMessage: document.querySelector('.input-message'),
-inputList: document.querySelector('.input-list')
-}
-
+const refs = {
+    input: document.querySelector(".js-input"),
+    ulList: document.querySelector(".js-list"),
+    ulListCard: document.querySelector(".js-list-card"),
+};
+export default refs;
