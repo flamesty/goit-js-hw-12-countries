@@ -1,20 +1,12 @@
 import refs from "./js/refs";
 import fetchCountries from "./js/fetchCountries";
+import "./css/style.css";
 
 import countriesTamplate from "./templates/countriesTamlate.hbs";
 
 var debounce = require("lodash.debounce");
 
 import { error, info, notice } from "@pnotify/core";
-
-import "@pnotify/core/dist/Material.css";
-import "material-design-icons/iconfont/material-icons.css";
-import { defaults } from "@pnotify/core";
-// or
-defaults.styling = "material";
-defaults.icons = "material";
-
-import "./css/style.css";
 
 refs.input.addEventListener("input", debounce(searchCountry, 500));
 
